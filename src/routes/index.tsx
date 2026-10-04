@@ -45,12 +45,12 @@ function Home() {
         <About />
         <Services />
         <Pricing />
-        <Faq />
         <WhyUs />
         <Process />
         <Reviews />
         <Contact />
         <Locations />
+        <Faq />
       </main>
       <Footer />
       <WhatsAppFab />
