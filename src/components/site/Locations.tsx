@@ -8,10 +8,10 @@ export function Locations() {
         <div className="grid gap-8 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
           <div>
             <h2 className="section-title mt-4 max-w-2xl text-3xl sm:text-4xl lg:text-5xl">
-              Professional Pest Control Near You
+              Wildlife Removal Near You
             </h2>
             <p className="mt-4 max-w-xl text-sm text-muted-foreground">
-              Rocky Racoon And Possum Removal provides professional pest control services throughout our local service
+              Rocky Raccoon & Possum Removal provides humane wildlife removal services throughout our local service
               area. Check your location during booking to see available services.
             </p>
           </div>
@@ -26,7 +26,7 @@ export function Locations() {
         <div className="mt-14 grid gap-8 md:grid-cols-[minmax(0,1fr)_280px] lg:grid-cols-[minmax(0,1fr)_320px]">
           <div className="overflow-hidden rounded-[2rem] shadow-card">
             <iframe
-              title="Rocky Racoon And Possum Removal service area map"
+              title="Rocky Raccoon & Possum Removal service area map"
               src="https://www.google.com/maps?q=Hialeah,%20FL&z=11&output=embed"
               loading="lazy"
               className="h-80 w-full border-0 sm:h-[420px]"

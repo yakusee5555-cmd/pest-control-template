@@ -13,8 +13,8 @@ export const Route = createFileRoute("/services/$serviceSlug")({
     return service;
   },
   head: ({ loaderData }) => {
-    const title = loaderData ? `${loaderData.title} | Rocky Racoon And Possum Removal` : "Service Not Found | Rocky Racoon And Possum Removal";
-    const description = loaderData?.summary ?? "The requested Rocky Racoon And Possum Removal service could not be found.";
+    const title = loaderData ? `${loaderData.title} | Rocky Raccoon & Possum Removal` : "Service Not Found | Rocky Raccoon & Possum Removal";
+    const description = loaderData?.summary ?? "The requested Rocky Raccoon & Possum Removal service could not be found.";
     return { meta: [
       { title },
       { name: "description", content: description },
@@ -38,6 +38,9 @@ function ServicePage() {
             <div>
               <Link to="/services" className="inline-flex items-center gap-2 text-sm font-bold text-brand"><ArrowLeft className="size-4" /> All services</Link>
               <h1 className="section-title mt-6 text-4xl sm:text-6xl">{service.title}</h1>
+              <p className="mt-4 inline-flex items-center rounded-full bg-[#FFC300] px-4 py-2 text-sm font-black uppercase tracking-wide text-[#1B4332]">
+                Service from {service.fromPrice}
+              </p>
               <p className="mt-6 max-w-xl text-base leading-7 text-muted-foreground">{service.description}</p>
               <a href="/#contact" className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand px-7 py-4 font-bold text-brand-foreground">Book this service <ArrowRight className="size-5" /></a>
             </div>

@@ -21,10 +21,10 @@ export function Navbar() {
           <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3 sm:px-6 lg:flex lg:justify-between">
             <a href="#top" className="flex min-h-12 min-w-0 items-center gap-2">
               <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-brand text-lg font-black text-brand-foreground">
-                P
+                R
               </span>
               <span className="truncate text-lg font-black tracking-tight uppercase">
-                Pest<span className="text-brand">Corex</span>
+                Rocky <span className="text-brand">Raccoon</span>
               </span>
             </a>
 
@@ -56,7 +56,7 @@ export function Navbar() {
 
             <div className="flex shrink-0 items-center gap-2 lg:hidden">
               <Button asChild variant="outline" size="icon" className="size-12 rounded-full border-brand text-brand shadow-none">
-                <a href={site.phoneHref} aria-label={`Call Rocky Racoon And Possum Removal at ${site.phone}`}>
+                <a href={site.phoneHref} aria-label={`Call ${site.name} at ${site.phone}`}>
                   <Phone className="size-4" />
                 </a>
               </Button>
@@ -95,7 +95,7 @@ export function Navbar() {
       >
         <div className="flex items-center justify-between border-b px-6 py-4">
           <span className="text-lg font-black tracking-tight uppercase">
-            Pest<span className="text-brand">Corex</span>
+            Rocky <span className="text-brand">Raccoon</span>
           </span>
           <button
             onClick={() => setOpen(false)}

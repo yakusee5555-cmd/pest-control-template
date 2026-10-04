@@ -1,19 +1,20 @@
+import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { site } from "@/lib/site";
+import { services } from "@/lib/services";
 
-const columns = [
-  {
-    title: "Company",
-    links: ["Raccoon Removal", "Possum Removal", "Wildlife Control", "Animal Exclusion"],
-  },
-  {
-    title: "Services",
-    links: ["Raccoon Removal", "Possum Removal", "Wildlife Control", "Animal Exclusion"],
-  },
-  {
-    title: "Support",
-    links: ["Raccoon Removal", "Possum Removal", "Wildlife Control", "Animal Exclusion"],
-  },
+const companyLinks = [
+  { label: "About Us", href: "/#about" },
+  { label: "Reviews", href: "/#reviews" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "FAQ", href: "/#faq" },
+];
+
+const areaLinks = [
+  { label: "Hialeah, FL", href: "/#locations" },
+  { label: "Miami Lakes, FL", href: "/#locations" },
+  { label: "Doral, FL", href: "/#locations" },
+  { label: "Opa-locka, FL", href: "/#locations" },
 ];
 
 export function Footer() {
@@ -23,15 +24,15 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-2 text-white">
             <span className="grid size-9 place-items-center rounded-xl bg-brand text-lg font-black">
-              P
+              R
             </span>
             <span className="text-lg font-black uppercase tracking-tight">
-              Pest<span className="text-[#FFC300]">Corex</span>
+              Rocky <span className="text-[#FFC300]">Raccoon</span>
             </span>
           </div>
           <p className="mt-4 text-sm">
-            Professional pest control for homes and businesses, with straightforward service
-            options and transparent pricing.
+            Humane wildlife removal for homes and businesses across Hialeah and Miami-Dade —
+            raccoons, possums, and nuisance wildlife removed and kept out for good.
           </p>
           <div className="mt-5 space-y-3 text-sm">
             <span className="flex items-start gap-2">
@@ -46,20 +47,48 @@ export function Footer() {
           </div>
         </div>
 
-        {columns.map((col) => (
-          <div key={col.title}>
-            <h3 className="text-sm font-black uppercase tracking-wide text-white">{col.title}</h3>
-            <ul className="mt-4 space-y-3 text-sm">
-              {col.links.map((l) => (
-                <li key={l}>
-                   <a href="#contact" className="flex min-h-12 items-center transition-colors hover:text-[#FFC300]">
-                    {l}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        <div>
+          <h3 className="text-sm font-black uppercase tracking-wide text-white">Services</h3>
+          <ul className="mt-4 space-y-3 text-sm">
+            {services.map((s) => (
+              <li key={s.slug}>
+                <Link
+                  to="/services/$serviceSlug"
+                  params={{ serviceSlug: s.slug }}
+                  className="flex min-h-12 items-center transition-colors hover:text-[#FFC300]"
+                >
+                  {s.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-sm font-black uppercase tracking-wide text-white">Company</h3>
+          <ul className="mt-4 space-y-3 text-sm">
+            {companyLinks.map((l) => (
+              <li key={l.label}>
+                <a href={l.href} className="flex min-h-12 items-center transition-colors hover:text-[#FFC300]">
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-sm font-black uppercase tracking-wide text-white">Service Areas</h3>
+          <ul className="mt-4 space-y-3 text-sm">
+            {areaLinks.map((l) => (
+              <li key={l.label}>
+                <a href={l.href} className="flex min-h-12 items-center transition-colors hover:text-[#FFC300]">
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
       <div className="border-t border-white/10">

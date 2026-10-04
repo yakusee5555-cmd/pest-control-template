@@ -5,18 +5,21 @@ import { site } from "@/lib/site";
 const reviews = [
   {
     quote:
-      "They treated our property like it was their own. Clear communication, tidy work, and results we can finally enjoy.",
-    name: "Local homeowner",
+      "Raccoons had taken over our attic — we could hear them every single night. They trapped them humanely, sealed every entry point, and six months later it's still quiet up there.",
+    name: "Maria Delgado",
+    town: "Hialeah, FL",
   },
   {
     quote:
-      "Reliable, thoughtful service from start to finish. The difference after one visit was remarkable.",
-    name: "Local homeowner",
+      "A possum was living under our deck and our dog wouldn't go near the backyard. They got it out the same day I called and walked me through keeping it from coming back.",
+    name: "James Carter",
+    town: "Miami Lakes, FL",
   },
   {
     quote:
-      "From the first quote to the final clean-up, everything felt considered and professional.",
-    name: "Local homeowner",
+      "Fair price, showed up on time, and the attic cleanup was thorough. You can tell they do wildlife removal every single day — total pros.",
+    name: "Sofia Ramirez",
+    town: "Doral, FL",
   },
 ];
 
@@ -46,6 +49,7 @@ export function Reviews() {
                 “{review.quote}”
               </blockquote>
               <p className="mt-6 text-sm font-bold">{review.name}</p>
+              <p className="text-xs text-muted-foreground">{review.town}</p>
             </article>
           ))}
         </div>

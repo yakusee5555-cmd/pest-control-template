@@ -17,17 +17,17 @@ import { MobileCallBar } from "@/components/site/MobileCallBar";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Rocky Racoon And Possum Removal | Pest Control in Hialeah, FL" },
+      { title: "Rocky Raccoon & Possum Removal | Wildlife Removal in Hialeah, FL" },
       {
         name: "description",
         content:
-          "Professional pest control for homes and businesses in Hialeah, FL. Transparent pricing, simple service options, and easy online booking.",
+          "Humane wildlife removal for homes and businesses in Hialeah, FL. Transparent pricing, simple service options, and easy online booking.",
       },
-      { property: "og:title", content: "Rocky Racoon And Possum Removal | Pest Control in Hialeah, FL" },
+      { property: "og:title", content: "Rocky Raccoon & Possum Removal | Wildlife Removal in Hialeah, FL" },
       {
         property: "og:description",
         content:
-          "Pest problems solved, protection made simple. Termite, bed bug, rodent and cockroach control from local experts.",
+          "Raccoon, possum, squirrel, and bat removal by local Hialeah experts — humane trapping, exclusion, and cleanup.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

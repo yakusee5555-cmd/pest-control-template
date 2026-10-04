@@ -13,8 +13,8 @@ export const Route = createFileRoute("/checkout/$planSlug")({
     return plan;
   },
   head: ({ loaderData }) => {
-    const title = loaderData ? `${loaderData.name} Checkout | Rocky Racoon And Possum Removal` : "Checkout | Rocky Racoon And Possum Removal";
-    const description = loaderData ? `Review the ${loaderData.name} plan and continue your Rocky Racoon And Possum Removal booking.` : "Review your Rocky Racoon And Possum Removal service selection.";
+    const title = loaderData ? `${loaderData.name} Checkout | Rocky Raccoon & Possum Removal` : "Checkout | Rocky Raccoon & Possum Removal";
+    const description = loaderData ? `Review the ${loaderData.name} plan and continue your Rocky Raccoon & Possum Removal booking.` : "Review your Rocky Raccoon & Possum Removal service selection.";
     return { meta: [
       { title },
       { name: "description", content: description },

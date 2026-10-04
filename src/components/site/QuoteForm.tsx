@@ -49,7 +49,7 @@ export function QuoteForm() {
             id="qf-phone"
             required
             type="tel"
-            placeholder="Example: (808) 555-1234"
+            placeholder="Your phone number"
             className="min-h-12 w-full rounded-xl border-0 bg-white px-4 py-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FFC300]"
           />
         </div>
